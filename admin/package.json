@@ -1,0 +1,35 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "format": "prettier-standard '{client,server,imports}/**/*.js'"
+  },
+  "dependencies": {
+    "antd": "^2.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "indexof": "0.0.1",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "~0.2.4",
+    "moment": "^2.18.1",
+    "query-string": "^4.3.4",
+    "react": "^15.6.1",
+    "react-addons-pure-render-mixin": "^15.4.2",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.2.2",
+    "recompose": "^0.23.5"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.1.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^3.0.1",
+    "prettier": "^1.5.2",
+    "prettier-standard": "^6.0.0",
+    "standard": "^10.0.2"
+  }
+}

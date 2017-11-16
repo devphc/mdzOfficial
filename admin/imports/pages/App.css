@@ -1,0 +1,76 @@
+/*a {
+  margin: 5px;
+}
+
+a, a:visited{
+  color: blue;
+}
+
+a.active {
+  color: red;
+}*/
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: #333;
+  border-radius: 6px;
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.login-form {
+  margin: auto;
+  max-width: 300px;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.print-show-only, .print-show-only * {
+  visibility: hidden;
+}
+
+/* 设定打印区域 */
+@media print {
+  body * {
+    visibility: hidden;
+    font-size: 10px;
+  }
+  .print-show, .print-show * {
+    visibility: visible;
+  }
+  .print-show {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .print-transactions:before {
+    display: block;
+    content: "请付款人携带本打印件前往财务部缴费；请财务人员核对付款单码和付款总额后，再进行[确认已付款]操作。";
+    margin: 10px 0px;
+    border: 1px solid #bbb;
+    padding: 3px 5px;
+    font-style: italic;
+  }
+  .print-hide, .print-hide * {
+    visibility: hidden;
+    display: none;
+  }
+  .ant-table-column-sorter, .ant-table-column-sorter * {
+    visibility: hidden;
+  }
+  .print-show-only, .print-show-only * {
+    visibility: visible;
+  }
+  .ant-table-fixed {
+    width: auto !important;
+  }
+  .ant-table-fixed-right {
+    display: none;
+  }
+}
+
+.ant-checkbox-wrapper:not(:last-child) {
+  margin-bottom: 8px;
+}
